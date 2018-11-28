@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+  ~ Copyright (c) 2016. Thinkr edu
+  -->
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory name="console">
+
+        <!-- Azure SQL Connection String -->
+        <!-- jdbc:sqlserver://bytes.database.windows.net:1433;database=ThinkrDB;client=kentative@bytes;password=Azure2016;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30; -->
+        <!-- Azure Connection -->
+        <!--<property name="connection.url">jdbc:sqlserver://bytes.database.windows.net:1433;database=ThinkrDB;client=kentative@bytes;password=Azure2016;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</property>-->
+        <!--<property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>-->
+        <!--<property name="connection.username">kentative</property>-->
+        <!--<property name="connection.password">Azure2016</property>-->
+
+        <!-- local connection -->
+        <property name="connection.url">jdbc:sqlserver://localhost:1433;database=ThinkrDB;integratedSecurity=false;</property>
+        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password">localDB01</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</property>
+        <property name="hibernate.jdbc.batch_size">100</property>
+        <property name="default_schema">thinkr</property>
+        <property name="show_sql">true</property>
+        <!--<property name="hbm2ddl.auto">create</property>-->
+
+        <!--<mapping package="com.bytes.thinkr.model"/>-->
+        <mapping package="com.bytes.thinkr.model.account"/>
+        <mapping class="com.bytes.thinkr.model.entity.account.Account"/>
+        <mapping class="com.bytes.thinkr.model.entity.account.Client"/>
+
+        <!--<mapping package="com.bytes.thinkr.model.assignment"/>-->
+        <mapping class="com.bytes.thinkr.model.entity.assignment.Assignment"/>
+        <mapping class="com.bytes.thinkr.model.entity.assignment.Task"/>
+        <mapping class="com.bytes.thinkr.model.entity.assignment.Question"/>
+        <mapping class="com.bytes.thinkr.model.entity.assignment.Answer"/>
+        <mapping class="com.bytes.thinkr.model.entity.assignment.Point"/>
+        <mapping class="com.bytes.thinkr.model.entity.assignment.Score"/>
+
+        <!--<mapping package="com.bytes.thinkr.model.session"/>-->
+        <mapping class="com.bytes.thinkr.model.entity.session.Session"/>
+
+    </session-factory>
+</hibernate-configuration>

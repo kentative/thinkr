@@ -1,0 +1,94 @@
+{
+    "id": "1c5c19f9-011b-4665-8673-477a23069091",
+    "categories": {
+        "CategoryST1": {
+            "name": "CategoryST1",
+            "isStaled": true
+        },
+        "CategoryS2": {
+            "name": "CategoryS2",
+            "isStaled": true
+        },
+        "CategoryS1": {
+            "name": "CategoryS1",
+            "isStaled": true
+        },
+        "Total": {
+            "name": "Total",
+            "isStaled": true
+        }
+    },
+    "rankedScores": {},
+    "userScores": {
+        "userId2": {
+            "CategoryST1": {
+                "userId": "userId2",
+                "points": 2,
+                "category": {
+                    "name": "CategoryST1",
+                    "isStaled": true
+                }
+            },
+            "CategoryS2": {
+                "userId": "userId2",
+                "points": 2,
+                "category": {
+                    "name": "CategoryS2",
+                    "isStaled": true
+                }
+            },
+            "CategoryS1": {
+                "userId": "userId2",
+                "points": 2,
+                "category": {
+                    "name": "CategoryS1",
+                    "isStaled": true
+                }
+            },
+            "Total": {
+                "userId": "userId2",
+                "points": 6,
+                "category": {
+                    "name": "Total",
+                    "isStaled": true
+                }
+            }
+        },
+        "userId3": {
+            "CategoryST1": {
+                "userId": "userId3",
+                "points": 4,
+                "category": {
+                    "name": "CategoryST1",
+                    "isStaled": true
+                }
+            },
+            "CategoryS2": {
+                "userId": "userId3",
+                "points": 4,
+                "category": {
+                    "name": "CategoryS2",
+                    "isStaled": true
+                }
+            },
+            "CategoryS1": {
+                "userId": "userId3",
+                "points": 4,
+                "category": {
+                    "name": "CategoryS1",
+                    "isStaled": true
+                }
+            },
+            "Total": {
+                "userId": "userId3",
+                "points": 12,
+                "category": {
+                    "name": "Total",
+                    "isStaled": true
+                }
+            }
+        }
+    },
+    "title": "Source Leaderboard",
+    "autoUpdate": false
+}
